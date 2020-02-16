@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css?family=Asap|Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+body{
+    font-family: Asap, Varela;
+    color: #777777;
+}
+
+h2 {
+    font-family: Asap;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #555;
+}
+
+#logo{
+    float: left;
+    font-size: 280%;
+    margin-left:30px;
+}
+#menu {
+    font-size: 110%;
+    list-style-type: none;
+    letter-spacing: 4px;
+}
+
+#logo, #menu{
+    line-height: 75px;
+}
+
+#menu li{
+    float:right;
+    margin-right: 30px;
+}
+
+#menu a{
+    text-decoration: none;
+    color: inherit;
+}
+#menu a:hover {
+    border-bottom: 1px solid #777777;
+}
+
+.active{
+    border-bottom: 1px solid #777777;
+}
+
+#hero-image{
+    height: 600px;
+    width: 100%;
+    background: url("img/custom-dublin.jpg") no-repeat center center;
+
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+#hero-outer{
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+@keyframes hero-zoom {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+#cover-text, #cover-text h2 {
+    color: #fff;
+}
+#cover-text {
+    font-size: 130%;
+    font-family: Asap;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    width: 300px;
+    height: 200px;
+
+    padding-top: 30px;
+    padding-left: 10px;
+
+    background-color: rgba(42,92,172,0.7);
+
+    bottom:30px;
+    right: 150px;
+    position: absolute;
+}
+
+#dublin-events{
+    height: 600px;
+}
+
+#left-about{
+    padding-top: 30px;
+    width: 33%;
+    float: left; 
+}
+
+#right-about{
+    padding-top: 30px;
+    width: 33%;
+    float: right;
+}
+
+#center-about{
+    width: 33%;
+    margin: 0 auto;
+}
+.left-about-heading{
+    width: 50%;
+    float: right;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;   
+}
+
+.right-about-heading {
+    width: 50%;
+    float: left;
+    line-height: 20px;
+    clear: both;
+    margin-bottom:50px;
+}
+
+hr {
+    border-top: 1px solid #777777;
+    width: 100%;
+    margin: 5px 0;
+}
+.right-about-heading h2{
+    text-align: right;
+}
+
+.right-about-heading p{
+    text-align: right;
+}
+
+#welcome {
+    text-align: center;
+    margin:20px 0;
+    font-size: 280%
+}
+
+#circle-container {
+    width: 300px;
+    height: 300px;
+    padding:30px;
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 1px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#circle-cover-bg {
+    background: url("img/Dublin-city-bg.jpg") no-repeat center center;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#event-planner {
+    background: url("img/dublin-town.PNG") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+#event-planner div{
+    color: #fafafa;
+    background-color: rgba(0,0,0,.6);
+    width: 19%;
+    height: 300px;
+    float: left;
+    padding: 30px 0 0 10px;
+    text-align: center;
+    margin: 4px;
+}
+
+#event-planner h2{
+    color: #fafafa;
+}
+
+footer {
+    height: 150px;
+}
+
+.socials{
+    text-align: center;
+}
+
+.socials li{
+    display: inline;
+}
+
+.socials i {
+    font-size: 250%;
+    margin: 1%;
+    padding: 5%;
+    color: #777777;
+}
+
+#copyright {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#photo {
+    clear: both;
+    line-height: 1;
+    column-count: 3;
+    column-gap: 1px;
+}
+
+#photo img{
+    width: 100%;
+}
+
+@media screen and (max-width: 1393px){
+    #dublin-events{
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    #welcome{
+        padding:30px 0;
+        margin-top: 0;
+    }
+
+    #left-about, #right-about {
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    #center-about{
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0
+    }
+
+    hr{
+        display: none;
+    }
+    
+    #event-planner div{
+        width: 100%;
+        clear: both;
+        height: 150;
+        border-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: #fff;
+    }
+}
+
+@media screen and (max-width:943px){
+    #menu{
+        clear:left;
+        float: left;
+        margin-left:20px;
+        margin-bottom:20px;
+        line-height: 25px;
+    }
+
+    #inner-map{
+        border: none;
+        width: 75%
+
+    }
+
+    #menu li{
+        padding: 0;
+        margin-right: 25px;
+        font-size: 75%;
+        
+    }
+
+    #cover-text{
+        left: 15px;
+    }
+
+    #dublin-events{
+        width: 90%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    .left-about-heading, .right-about-heading {
+        width: inherit;
+    }
+
+    .left-about-heading h2, .right-about-heading h2 {
+        width: 100%;
+        text-align: center;
+    }
+    .left-about-heading p, .right-about-heading p {
+        text-align: center;
+        padding: 0, 20px, 0, 20px;
+    }
+    #photo {
+        column-count: 3;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #photo{
+        column-count: 2;
+    }
+    
+}
+#map {
+    margin: 0;
+    padding: 0;
+    clear: both;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-top: solid #777777 1px;
+    border-bottom: solid #777777 1px;
+
+}
+
+#inner-map {
+    border: solid #777777 10px;
+}
+
