@@ -1,5 +1,8 @@
 # Code Institute
 
+---
+permalink: /index.html
+---
 Dublin Sights - Read Me
 
 This site is based on the Love Running Module of our course in the CSS module.
